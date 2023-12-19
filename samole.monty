@@ -1,7 +1,6 @@
 # Sample Monty byte code file
 
 # Push some numbers onto the stack
-
 push 3
 push  5
 push 9
@@ -11,6 +10,7 @@ pop
 pint
 swap
 nop
+add
 # Push another number
 push 12
 pall 

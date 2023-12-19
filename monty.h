@@ -38,6 +38,9 @@ void handle_rest2(char *opcode, stack_t **stack, instruction_t instructions[],
                  unsigned int line_number, int i, FILE *file);
 void pint(stack_t **stack, unsigned int line_number);
 void nop(stack_t **stack, unsigned int line_number);
+void add(stack_t **stack, unsigned int line_number);
+void handle_add(char *opcode, stack_t **stack, instruction_t instructions[],
+unsigned int line_number, int i, FILE *file);
 void free_stack(stack_t *stack);
 
 #endif

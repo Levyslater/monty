@@ -46,4 +46,5 @@ unsigned int line_number, int i, FILE *file)
 			return;
 		}
 	}
+	handle_add(opcode, stack, instructions, line_number, i, file);
 }

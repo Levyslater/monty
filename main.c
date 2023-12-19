@@ -12,7 +12,8 @@ int main(int argc, char *argv[])
 {
 	FILE *file;
 	instruction_t instructions[] = {{"push", push}, {"pop", pop},
-	{"pall", pall}, {"swap", swap}, {"pint", pint}, {"nop", nop}, {NULL, NULL}};
+	{"pall", pall}, {"swap", swap}, {"pint", pint},
+	{"nop", nop}, {"add", add}, {NULL, NULL}};
 
 	stack_t *stack = NULL;
 
