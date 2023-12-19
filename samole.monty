@@ -1,0 +1,18 @@
+# Sample Monty byte code file
+
+# Push some numbers onto the stack
+push 3
+push  5
+#push 9
+
+# Pop an element from the stack
+pop
+pint
+swap
+# Push another number
+push 12
+pall 
+
+# This line contains an unknown instruction
+
+# Pop the remaining elements
