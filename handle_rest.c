@@ -24,7 +24,7 @@ unsigned int line_number, int i, FILE *file)
 	{
 		if ((*stack)->top == NULL)
 		{
-			fprintf(stderr, "Error: can't pop an empty stack\n");
+			fprintf(stderr, "L%d: can't pop an empty stack\n", line_number);
 			fclose(file);
 			free_stack(*stack);
 			exit(EXIT_FAILURE);
@@ -35,5 +35,11 @@ unsigned int line_number, int i, FILE *file)
 			return;
 		}
 	}
+	else if (strcmp(opcode, "nop") == 0)
+	{
+		instructions[i].f(stack, line_number);
+		return;
+	}
+
 	handle_rest2(opcode, stack, instructions, line_number, i, file);
 }
